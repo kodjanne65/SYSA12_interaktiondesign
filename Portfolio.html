@@ -1,0 +1,484 @@
+<header>
+    <style>
+        :root {
+            font-size: 10px;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background-color: #fafafa;
+            color: #262626;
+            padding-bottom: 3rem;
+        }
+
+        img {
+            display: block;
+        }
+
+        .container {
+            max-width: 100rem;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            font: inherit;
+            background: none;
+            border: none;
+            color: inherit;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        .btn:focus {
+            outline: 0.5rem auto #4d90fe;
+        }
+
+        .visually-hidden {
+            position: absolute !important;
+            height: 1px;
+            width: 1px;
+            overflow: hidden;
+            clip: rect(1px, 1px, 1px, 1px);
+        }
+
+		/* Portfolio Section */
+		.portfolio-title {
+			font-family: "Modern No. 20", serif;
+    		text-align: center;
+    		font-size: 8rem;
+    		margin-top: 15rem;
+			margin-bottom: 1rem;
+		}
+
+		.portfolio-description {
+			font-family: "Cormorant Garamond", serif;
+    		text-align: center;
+    		font-size: 2.2rem;
+    		color: hsl(0, 0%, 28%);
+    		margin-bottom: 15rem;
+		}
+        /* Gallery Section */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -1rem -1rem;
+            padding-bottom: 3rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            flex: 1 0 22rem;
+            margin: 4rem;
+          	max-height: 40rem;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover .gallery-item-info,
+        .gallery-item:focus .gallery-item-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery-item-info {
+            display: none;
+        }
+
+        .gallery-item-info li {
+            display: inline-block;
+            font-size: 1.7rem;
+            font-weight: 600;
+        }
+
+        .gallery-item-likes {
+            margin-right: 2.2rem;
+        }
+
+        .gallery-item-type {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 2.5rem;
+            text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+        }
+
+        .fa-clone,
+        .fa-comment {
+            transform: rotateY(180deg);
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</header>
+
+<main>
+
+	<div class="container">
+
+		<!-- Portfolio title -->
+        <p class="portfolio-title">Portfolio</p>
+        
+        <!-- Description -->
+        <p class="portfolio-description">There may be no better way to communicate what I do than through images. 
+			As you browse the site, take a few moments to let your eyes linger here, and get a feel for my work.</p>
+
+		<div class="gallery">
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_825e7e780c124fc6b6e950a2280fe7e8~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_55d1d690bb6c479b90f4c59213b91f5c~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_d783beb0a81747858616333247995bca~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_77ff2ba57cde45e8b357b9fb9251d969~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_824ba458984f4fb4b774fa3675c61657~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_86dfa7678ca84fa9ad1a279abfcbcc4f~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_fb218878140142d6a4ddf5caa4d4b3fb~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_5b07bf6a403242b68ca1b0832ff8fbd1~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_6a481b75262e4c6da9df41b15a95357f~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_b4566b55fc2d4bab86c6dabec4dad959~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_078a942ebe8c488d9c188e8345b7dad3~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_0266f43007724ad6bda4fc0076a694e8~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_d376639800354f3ab4096201c4b7a9ad~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_45f7749095824c27a1206b3045cf0875~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_aa73c6ae7e7a48579b01c081da533598~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_e3212bea847a477299f26335d579295c~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_785f54d84dce4b8b815192e6249f47bf~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_fa763cf314934db0a3e6da76da5af40b~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_4de28f058aeb431e9cc7e1177a3d115e~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_4421ed0499864531bb0b15be6eabb8c7~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_c904b003c27d4cb5a7f31b5b369e416c~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_773f6ffdf71f4587a104ad1fd25cd955~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_f313d70563284ba6a2c9fa524c70f247~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_a097b9ff5cdf4c4ba00afeaae1d04ce6~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_49fd342e74374132a2e3e6630b61ecd6~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_ec96242c97384f5995f9a38431bd93f7~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_07fbc14463c8428d8cf0f28906f882f7~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_28aad60a40534156ba1b6053644a86f8~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_1ebdfa32257b4d8082aa5df6a26be047~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_5aa57cc9d97a4e579042578d736ca3a9~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_1ebdfa32257b4d8082aa5df6a26be047~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_841cfe71727b40ef9909d7b685da8400~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_57787714dd734941b3405c21fa89787a~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_af0ae30bb6d749899058847e5d6ab4bc~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_3f9db811b1e144b29b713cfcdae2c219~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_692f1ff1192b41b2a68142f97833a07a~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_dfd29366f51744188112d63c1ebc39ec~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_365c46162d744b14925de9d6183a9040~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_2f78da719c4d4ea6afc9dfdc1f4fae24~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_2cb130a774874fa1b835c9314bfd1a74~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_34d669a47a7e4d629579423cd84d44f3~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+			
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_a191bcc014da4b1bbf559eec99628198~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_bbd8f67b30d74d11966de1a99c95c296~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_b6c709676ab949f1af3b40e67407428e~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_3ca2f974a60f433890c3be3dda729aca~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_09575b2202664d33a02828a808ab06c6~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_d94dcbd54dbe4bb5a999692b432d8c6b~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_387ae812968c4086a844945f7dc82137~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_3a3ee8a196d44da9816a9e4c8cdbdea7~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_82c948c9dad9440f87516e04b3e4bfd3~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_5b4af1676cf443559005dff8a43460b8~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_b7a85303b83e4d888c4a8de8da25da74~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_b9b5b11055844d84b0a15b984e27b87e~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_5c77cb4f3e974b3186a6ab3080da1623~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+
+			<div class="gallery-item" tabindex="0">
+
+				<img src="https://static.wixstatic.com/media/041612_526b13c61d1e46baab1578f71ad0ae24~mv2.jpg" class="gallery-image" alt="">
+
+			</div>
+			
+		</div>
+		<!-- End of gallery -->
+
+		<div class="loader"></div>
+
+	</div>
+	<!-- End of container -->
+
+</main>
